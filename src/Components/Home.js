@@ -1,8 +1,17 @@
 import React from 'react';
-// import sytles from './Header.module.css';
+import Feed from './Feed/Feed';
+import Head from './Helper/Head';
 
 const Home = () => {
-  return <div className={styles.header}>Home</div>;
+  return (
+    <section className="container mainContainer">
+      <Head
+        title="Fotos"
+        description="Home do site Dogs, com o feed de fotos."
+      />
+      <Feed />
+    </section>
+  );
 };
 
 export default Home;
